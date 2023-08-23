@@ -26,7 +26,8 @@ type Option = func(*model)
 
 func New(table string, options ...Option) Model {
 	m := &model{
-		table: qb.Table{Name: table},
+		table:  qb.Table{Name: table},
+		fields: make(map[string]qb.TableField),
 	}
 
 	for _, fn := range options {
