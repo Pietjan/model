@@ -4,6 +4,4 @@ git.ultraware.nl/NiseVoid/qb v2.6.0+incompatible h1:OsDZYU1E8NvRua5qdrgTafTnSWm3
 git.ultraware.nl/NiseVoid/qb v2.6.0+incompatible/go.mod h1:n0EmqW0v1D6bGDUw8N8wsfx+nIQt9Mc1sgSU8UExzP8=
 github.com/google/go-cmp v0.4.0 h1:xsAVV57WRhGj6kEIi8ReJzQlHHqcBYCElAvkovg3B/4=
 github.com/google/go-cmp v0.4.0/go.mod h1:v8dTdLbMG2kIc/vJvl+f65V22dbkXbowE6jgT/gNBxE=
-github.com/ultraware/qb v2.6.0+incompatible h1:WSutfaO88DLLIwqG8GjEfKdm7kGoAkS39ul2F7w4qkI=
-github.com/ultraware/qb v2.6.0+incompatible/go.mod h1:b5kFKFuLvHGSX9lkE2xtJbqAmrVEKklLjRK7JZfHts4=
 golang.org/x/xerrors v0.0.0-20191204190536-9bdfabe68543/go.mod h1:I/5z698sn9Ka8TeJc9MKroUUfqBBauWjQqLJ2OPfmY0=

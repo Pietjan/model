@@ -4,8 +4,8 @@ import (
 	"fmt"
 
 	"git.ultraware.nl/NiseVoid/qb"
-	"github.com/ultraware/qb/qbdb"
-	"github.com/ultraware/qb/qf"
+	"git.ultraware.nl/NiseVoid/qb/qbdb"
+	"git.ultraware.nl/NiseVoid/qb/qf"
 )
 
 type Model interface {
