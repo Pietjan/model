@@ -14,7 +14,7 @@ type Model interface {
 	Insert(f ...qb.Field) *qb.InsertBuilder
 	Update() *qb.UpdateBuilder
 	Delete(c1 qb.Condition, c2 ...qb.Condition) qb.Query
-	F(f any) qb.Field
+	Field(f any) qb.Field
 }
 
 type model struct {
@@ -55,10 +55,10 @@ func (d *model) Select(a ...any) *qb.SelectBuilder {
 		switch t := v.(type) {
 		case []string:
 			for _, s := range t {
-				fields = append(fields, d.F(s))
+				fields = append(fields, d.Field(s))
 			}
 		default:
-			fields = append(fields, d.F(v))
+			fields = append(fields, d.Field(v))
 		}
 	}
 
@@ -77,7 +77,7 @@ func (d *model) Delete(c1 qb.Condition, c2 ...qb.Condition) qb.Query {
 	return d.table.Delete(c1, c2...)
 }
 
-func (d *model) F(v any) qb.Field {
+func (d *model) Field(v any) qb.Field {
 	switch f := v.(type) {
 	case qf.CalculatedField:
 		return f
